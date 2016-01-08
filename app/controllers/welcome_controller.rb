@@ -6,4 +6,7 @@ class WelcomeController < ApplicationController
   def podcasts
   end
 
+  def show
+  end
+
 end

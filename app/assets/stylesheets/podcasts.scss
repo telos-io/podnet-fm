@@ -73,3 +73,92 @@
     }
   }
 }
+#podcast-show{
+  #show-banner{
+    background:$dark;
+    text-align: center;
+    padding: 5rem 0;
+    h1{
+      font-size:2.5rem;
+      font-weight:300;
+      color:$white;
+      margin:0 0 .5rem;
+    }
+    .description{
+      width:60%;
+      line-height: 1.75;
+      margin:0 auto 2rem auto;
+      color:lighten($dark, 30%);
+    }
+    .subscribe-link{
+      font-size:0.6rem;
+      text-transform:uppercase;
+      font-weight: 700;
+      text-align: center;
+      color:$white;
+      background: $highlight;
+      text-decoration: none;
+      display:inline;
+      border-radius:2rem;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      &:hover{
+        background: darken($highlight, 10%)
+      }
+    }
+  }
+}
+
+#breadcrumb{
+  padding:1rem 0;
+  text-align:center;
+  border-bottom: 1px solid darken($dark, 75%);
+  font-weight: 700;
+  font-size: .7rem;
+  text-decoration: none;
+  a{
+    color: lighten($dark, 10%);
+  }
+  span{
+    margin: 0 0.5rem;
+  }
+}
+
+#episode{
+  padding:3rem 0;
+  ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+      padding-bottom:2rem;
+      border-bottom: 1px solid darken($dark, 75%);
+      margin-bottom: 2rem;
+      &:last-child{
+        border-bottom: none;
+      }
+      .episode-thumbnail{
+        width:22%;
+        float: left;
+        img{
+          width:10rem;
+          max-width: 100%;
+          border-radius:0.35rem;
+        }
+      }
+      .episode-overview{
+        width:75.5%;
+        float:left;
+        margin-left:1.5%;
+        h2 {
+          a {
+            text-decoration: none;
+            color: $dark;
+          }
+        }
+      }
+      .description{
+        color:lighten($dark, 25%)
+      }
+    }
+  }
+}
