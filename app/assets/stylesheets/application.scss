@@ -1,0 +1,129 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_normailze;
+ *= require_welcome;
+ *= require_podcasts;
+ */
+
+$white: #FFFFFF;
+$highlight: #EE7964;
+$dark: #2C3135;
+$light: #EDEFF5;
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+.center{
+  text-align:center;
+}
+
+.wrapper-wide{
+  width: 90%;
+  margin:0 auto;
+}
+.wrapper{
+  width: 80%;
+  margin:0 auto;
+}
+.wrapper-skinny{
+  width:70%;
+  margin:0 auto;
+}
+
+.cf:before, .cf:after{
+  content: " ";
+  display: table;
+}
+
+.cf:after{
+  clear: both;
+}
+
+.button{
+  color: $white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  margin: 1.5rem 2.5rem 0 2.5rem;
+}
+
+.button_highlight{
+  background: $highlight;
+  transition: background .4s ease-in-out;
+  &:hover{
+    background: darken($highlight, 7.5%);
+  }
+}
+
+.button_white{
+  color: $dark;
+  background-color: $white;
+  transition: background .4s ease-in-out;
+  &:hover{
+    background: darken($white, 7.5%);
+  }
+}
+
+#main-header{
+  color: $dark;
+  background: $white;
+  padding: 2.5rem 0;
+  #logo{
+    float: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark;
+    text-decoration:none;
+  }
+  nav{
+    float: right;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    li{
+      display:inline;
+      margin-left: 2.5rem;
+      a {
+        color: $dark;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.banner{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 4rem;
+  h1{
+    text-align: center;
+    color:$white;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 4rem 0;
+  }
+}
+
+#podcasts_banner{
+  background-image: url('podcasts_banner');
+}
