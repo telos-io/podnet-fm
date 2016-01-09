@@ -9,4 +9,10 @@ class WelcomeController < ApplicationController
   def show
   end
 
+  def episode
+  end
+
+  def dashboard
+  end
+
 end

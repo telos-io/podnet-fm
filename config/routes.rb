@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'podcasts', to: 'welcome#podcasts'
   get 'show', to: 'welcome#show'
+  get 'episode', to: 'welcome#episode'
+  get 'dashboard', to: 'welcome#dashboard'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
