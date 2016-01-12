@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'show', to: 'welcome#show'
   get 'episode', to: 'welcome#episode'
   get 'dashboard', to: 'welcome#dashboard'
+  get 'sign-in', to: 'welcome#sign-in'
+  get 'sign-up', to: 'welcome#sign-up'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
