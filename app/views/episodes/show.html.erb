@@ -19,8 +19,18 @@
     <%= link_to podcasts_path do %>
     All Podcasts
     <span>/</span>
-      <span><%= @podcast.title %></span>
+      <span><%= link_to @podcast.title, podcast_path(@podcast) %></span>
+    <span>/</span>
+      <span><%= @episode.title %></span>
     <% end %>
+  </div>
+
+  <div id="episode-content">
+    <div class="wrapper-skinny">
+      <img src="http://placehold.it/150x150" class="current-episode-thumbnail">
+      <h2><%= @episode.title %></h2>
+      <p class="description"><%= @episode.description %></p>
+    </div>
   </div>
 
   <div id="episode">
