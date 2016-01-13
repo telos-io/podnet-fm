@@ -4,6 +4,16 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title  %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
@@ -19,6 +29,22 @@
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <h3>Links</h3>
+  <div class="field">
+    <%= f.label :itunes %><br />
+    <%= f.text_field :itunes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stitcher %><br />
+    <%= f.text_field :stitcher %>
+  </div>
+
+  <div class="field">
+    <%= f.label :podbay %><br />
+    <%= f.text_field :podbay %>
   </div>
 
   <div class="actions">
