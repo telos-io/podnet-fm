@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  resources :podcasts, only: [:index, :show]
+
   get 'podcasts', to: 'welcome#podcasts'
   get 'show', to: 'welcome#show'
   get 'episode', to: 'welcome#episode'
