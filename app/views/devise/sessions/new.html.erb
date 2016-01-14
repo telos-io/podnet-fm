@@ -1,7 +1,7 @@
 <div class="banner" id="sign-up-banner">
   <h1>Create a Podcast.  Its 100% Free.</h1>
 </div>
-<div class="wrapper">
+<div class="wrapper-skinny">
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -23,7 +23,7 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class:"button button_highlight" %>
   </div>
 <% end %>
 

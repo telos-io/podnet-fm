@@ -1,3 +1,10 @@
+<div id="podcast-show">
+  <div id="show-banner">
+    <div class="wrapper-skinny">
+      <h1>Dashboard:<br><%= @podcast.title %></h1>
+      <p class="description"><%= @podcast.description %></p>
+    </div>
+  </div>
 
 <div id="dashboard-sub-nav">
   <div class="wrapper-skinny">
@@ -13,17 +20,5 @@
 <div class="wrapper-skinny">
   <h1>Upload an Episode</h1>
 
-  <div id="form">
-      <%= form_for ([@podcast, @episode]) do |f| %>
-      <div class="field">
-        <%= f.label :title %> <br>
-        <%= f.text_field :title, class: "form-control" %>
-      </div>
-      <div class="field">
-        <%= f.label :description %> <br>
-        <%= f.text_area :description, class: "form-control" %>
-      </div>
-        <%= f.submit class: "button button_highlight button_block" %>
-      <% end %>
-    </div>
+  <%= render "form" %>
 </div>
