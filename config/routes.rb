@@ -4,18 +4,23 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
 
   resources :podcasts, only: [:index, :show] do
     resources :episodes
   end
 
-  get 'podcasts', to: 'welcome#podcasts'
-  get 'show', to: 'welcome#show'
-  get 'episode', to: 'welcome#episode'
-  get 'dashboard', to: 'welcome#dashboard'
-  get 'sign-in', to: 'welcome#sign-in'
-  get 'sign-up', to: 'welcome#sign-up'
+  authenticated :podcast do
+    root 'podcasts#dashboard', as: "authenticated_root"
+  end
+
+  root 'welcome#index'
+
+  # get 'podcasts', to: 'welcome#podcasts'
+  # get 'show', to: 'welcome#show'
+  # get 'episode', to: 'welcome#episode'
+  # get 'dashboard', to: 'welcome#dashboard'
+  # get 'sign-in', to: 'welcome#sign-in'
+  # get 'sign-up', to: 'welcome#sign-up'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

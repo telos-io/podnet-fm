@@ -1,0 +1,41 @@
+<div id="podcast-show">
+  <div id="show-banner">
+    <div class="wrapper-skinny">
+      <h1>Dashboard:<br />The Rocketship Podcast</h1>
+      <p class="description">lsjkdf sadlfkjas;dlfjk sadflsakdfnsd fsdaf sadfls fasljd fl;ajfslkdfnlask</p>
+      <a href="#" class="subscribe-link">Edit</a>
+    </div>
+  </div>
+
+  <div id="dashboard-sub-nav">
+    <div class="wrapper-skinny">
+      <ul>
+        <li class="current">Episodes</li>
+        <li><%= link_to "New Episodes", new_podcast_episode_path(@podcast) %></li>
+        <li><%= link_to "Account Settings", edit_podcast_registration_path(@podcast) %></li>
+        <li><%= link_to "View Podcast", podcast_episodes_path(@podcast) %></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="episode">
+    <div class="wrapper-skinny">
+      <ul class="cf">
+        <% @episodes.each do |episode| %>
+          <li class="cf">
+            <div class="episode-thumbnail">
+              <img src="http://placehold.it/150x150">
+            </div>
+            <div class="episode-overview">
+              <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
+              <p class="description"><%= episode.description %></p>
+              <div class="authorized-links">
+                <%= link_to "Edit", edit_podcast_episode_path(@podcast, episode) %>
+                <%= link_to "Delete", podcast_episode_path(@podcast, episode), method: :delete, data: {confirm: "Are you sure"} %>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      </ul>
+      </div>
+    </div>

@@ -1,9 +1,29 @@
-<h1>Upload an Episode</h1>
 
-<%= form_for ([@podcast, @episode]) do |f| %>
-  <%= f.label :title %> <br>
-  <%= f.text_field :title, class: "form-control" %> <br>
-  <%= f.label :description %> <br>
-  <%= f.text_area :description, class: "form-control" %> <br>
-  <%= f.submit %>
-<% end %>
+<div id="dashboard-sub-nav">
+  <div class="wrapper-skinny">
+    <ul>
+      <li> <%= link_to "Episodes", root_path %></li>
+      <li><%= link_to "New Episodes", new_podcast_episode_path(@podcast), class: "current" %></li>
+      <li><%= link_to "Account Settings", edit_podcast_registration_path(@podcast) %></li>
+      <li><%= link_to "View Podcast", podcast_episodes_path(@podcast) %></li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper-skinny">
+  <h1>Upload an Episode</h1>
+
+  <div id="form">
+      <%= form_for ([@podcast, @episode]) do |f| %>
+      <div class="field">
+        <%= f.label :title %> <br>
+        <%= f.text_field :title, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :description %> <br>
+        <%= f.text_area :description, class: "form-control" %>
+      </div>
+        <%= f.submit class: "button button_highlight button_block" %>
+      <% end %>
+    </div>
+</div>
