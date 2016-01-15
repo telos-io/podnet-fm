@@ -40,8 +40,13 @@
 
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
+    <%= f.password_field :current_password %>
+
+  <div class="field">
+    <%= f.label :thumbnail %><br />
+    <%= f.file_field :thumbnail %>
   </div>
+
 
   <h3>Links</h3>
   <div class="field">

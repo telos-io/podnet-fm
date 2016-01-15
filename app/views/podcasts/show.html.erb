@@ -17,10 +17,11 @@
 
   <div id="breadcrumb">
     <%= link_to podcasts_path do %>
-    All Podcasts
+    <span>All Podcasts</span>
+    <% end %>
     <span>/</span>
       <span><%= @podcast.title %></span>
-    <% end %>
+
   </div>
 
   <div id="episode">
@@ -29,7 +30,7 @@
         <% @episodes.each do |episode| %>
         <li class="cf">
           <div class="episode-thumbnail">
-            <img src="http://placehold.it/150x150">
+            <%= image_tag episode.episode_thumbnail.url(:medium) %>
           </div>
           <div class="episode-overview">
             <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
