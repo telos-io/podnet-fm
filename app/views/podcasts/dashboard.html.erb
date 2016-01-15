@@ -1,9 +1,9 @@
 <div id="podcast-show">
   <div id="show-banner">
     <div class="wrapper-skinny">
-      <h1>Dashboard:<br />The Rocketship Podcast</h1>
-      <p class="description">lsjkdf sadlfkjas;dlfjk sadflsakdfnsd fsdaf sadfls fasljd fl;ajfslkdfnlask</p>
-      <a href="#" class="subscribe-link">Edit</a>
+      <h1>Dashboard:<br><%= @podcast.title %></h1>
+      <p class="description"><%= @podcast.description %></p>
+      <%= link_to "edit", edit_podcast_registration_path(@podcast), class: "button button_highlight" %>
     </div>
   </div>
 
