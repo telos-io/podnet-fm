@@ -35,15 +35,15 @@
           margin: 0.5rem 0 .25rem 0;
         }
       }
-    }
-  }
-  &:hover{
-    img{
-      opacity: 0.8;
-    }
-    .podcast_overview{
-      h2{
-        color: $highlight;
+      &:hover{
+        img{
+          opacity: 0.8;
+        }
+        .podcast_overview{
+          h2{
+            color: $highlight;
+          }
+        }
       }
     }
   }
