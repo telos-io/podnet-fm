@@ -1,3 +1,5 @@
+<%= render "layouts/header" %>
+
 <div id="podcast-show">
   <div id="show-banner">
     <div class="wrapper-skinny">
@@ -12,7 +14,7 @@
         <li class="current">Episodes</li>
         <li><%= link_to "New Episodes", new_podcast_episode_path(@podcast) %></li>
         <li><%= link_to "Account Settings", edit_podcast_registration_path(@podcast) %></li>
-        <li><%= link_to "View Podcast", podcast_episodes_path(@podcast) %></li>
+        <li><%= link_to "View Podcast", podcast_path(@podcast) %></li>
       </ul>
     </div>
   </div>
@@ -36,5 +38,6 @@
           <% end %>
         </li>
       </ul>
+      <%= will_paginate @episodes, previous_label: "Prev", next_label: "Next" %>
       </div>
     </div>

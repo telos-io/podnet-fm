@@ -32,12 +32,13 @@ body{
 
 .wrapper-wide{
   width: 90%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .wrapper{
   width: 80%;
   margin:0 auto;
 }
+
 .wrapper-skinny{
   width:60%;
   margin:0 auto;
@@ -129,9 +130,9 @@ body{
 }
 
 #sign-in-banner{
-  background-image: url('sign_in_banner')
+  background-image: url('sign_in_banner');
 }
 
 #sign-up-banner{
-  background-image: url('sign_up_banner')
+  background-image: url('sign_up_banner');
 }
