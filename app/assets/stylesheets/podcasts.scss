@@ -2,199 +2,174 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "application";
+@import 'application';
 
-#podcasts{
+#podcasts {
   padding-bottom: 3rem;
-  ul{
+  ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
     li {
-      width: 23%;
-      float: left;
-      margin: 0 1% 2rem 1%;
+      border-radius: 0.35rem;
       -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25);
       box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25);
-      border-radius: 0.35rem;
+      float: left;
+      margin: 0 1% 2rem 1%;
+      width: 23%;
       img {
         width: 100%;
         max-width: 100%;
-        border-radius: 0.35rem 0.35rem 0 0;
+        border-radius: .35rem .35rem 0 0;
       }
-      .podcast-overview{
+      .podcast-overview {
         padding: 1rem 7.5%;
         h2 {
-          margin: 0;
-          font-size: 700;
           color: $dark;
+          font-size: 700;
+          margin: 0;
         }
-        .episode_count{
+         .episode_count {
           color: lighten($dark, 50%);
-          font-size: 09rem;
-          margin: 0.5rem 0 .25rem 0;
+          font-size: .9rem;
+          margin: .5rem 0 .25rem 0;
         }
       }
-      &:hover{
-        img{
+      &:hover {
+        img {
           opacity: 0.8;
         }
-        .podcast_overview{
-          h2{
+        .podcast_overview {
+          h2 {
             color: $highlight;
       }
     }
   }
  }
- }
-
-.pagination{
-  text-align:center;
-  margin: 1rem 0 5rem 0;
-  a, .previous-page, .current, .next-page{
-    padding: 0.75rem;
-    margin: 0 0.25rem;
-    border-radius: 0.15rem;
-    line-height: 1.25;
-    text-decoration: none;
-    background-color: #edeff5;
-    font-weight: 700;
-    font-size: 0.75rem;
-    &:hover{
-      background-color: $highlight;
-      color: $white;
-    }
-  }
-  .current{
-    background-color: $highlight;
-    color: $white;
-  }
-  .disabled{
-    color: #c0c0c0;
-    &:hover{
-      color: #c0c0c0;
-    }
-  }
+}
 }
 
-#podcast-show{
-  #show-banner{
+
+#podcast-show {
+  #show-banner {
     background: $dark;
-    text-align: center;
     padding: 5rem 0;
-    h1{
+    text-align: center;
+    h1 {
+      color: $white;
       font-size: 2.5rem;
       font-weight: 300;
-      color: $white;
       margin: 0 0 .5rem;
     }
-    .description{
-      width:60%;
+    .description {
+      color: lighten($dark, 30%);
       line-height: 1.75;
-      margin:0 auto 2rem auto;
-      color:lighten($dark, 30%);
+      margin: 0 auto 2rem;
+      width: 60%;
+
     }
-    .subscribe-link{
-      font-size:0.6rem;
+    .subscribe-link {
+      font-size: 0.6rem;
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
-      color:$white;
+      color: $white;
       background: $highlight;
       text-decoration: none;
-      display:inline;
+      display: inline;
       border-radius: 2rem;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      &:hover{
+      padding: .5rem 1rem;
+      margin: 0 .5rem;
+      &:hover {
         background: darken($highlight, 10%);
       }
     }
   }
-  #breadcrumb{
-    padding:1rem 0;
-    text-align:center;
+  #breadcrumb {
+    padding: 1rem 0;
+    text-align: center;
     border-bottom: 1px solid darken($dark, 75%);
     font-weight: 700;
     font-size: .7rem;
     text-decoration: none;
-    a{
+    a {
       color: lighten($dark, 10%);
     }
-    span{
+    span {
       margin: 0 0.5rem;
     }
   }
-  #episode{
-    padding:3rem 0;
-    ul{
+  #episode {
+    padding: 3rem 0;
+    ul {
       list-style: none;
       padding-left: 0;
-      li{
-        padding-bottom:2rem;
+      li {
+        padding-bottom: 2rem;
         border-bottom: 1px solid darken($dark, 75%);
         margin-bottom: 2rem;
-        &:last-child{
-          border-bottom: none;
+        &:last-child {
+          border-bottom: 0;
         }
-        .episode-thumbnail{
+        .episode-thumbnail {
           width: 22%;
           float: left;
           img{
-            width:10rem;
+            width:1 0rem;
             max-width: 100%;
-            border-radius:0.35rem;
+            border-radius: .35rem;
           }
         }
-        .episode-overview{
-          width:75.5%;
-          float:left;
-          margin-left:1.5%;
+        .episode-overview {
+          width: 75.5%;
+          float: left;
+          margin-left: 1.5%;
           h2 {
             a {
               text-decoration: none;
               color: $dark;
             }
           }
-          .authorized-links{
+          .authorized-links {
             font-weight: 700;
             font-size: 0.8rem;
-            a{
+            a {
               text-decoration: none;
               color: $highlight;
               margin-right: 1rem;
             }
           }
         }
-        .description{
-          color:lighten($dark, 25%);
+        .description {
+          color: lighten($dark, 25%);
         }
       }
     }
   }
 
-#episode-content{
+#episode-content {
   padding: 4rem 0;
   margin-bottom: 4rem;
   border-bottom: 1px solid lighten($dark, 75%);
-  .current-episode-thumbnail{
+  .current-episode-thumbnail {
     display: block;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2rem;
     width: 10rem;
     max-width: 100%;
-    border-radius: 0.35rem;
+    border-radius: .35rem;
   }
-  h2{
-    font-size:1.5rem;
+  h2 {
+    font-size: 1.5rem;
     text-align: center;
   }
-  .description{
+  .description {
     text-align: center;
     font-size: .9rem;
     line-height: 1.7rem;
     color: lighten($dark, 10%);
   }
-  .jp-jplayer,.jp-audio {
+  .jp-jplayer,
+  .jp-audio {
       width: 70%;
       margin: 3rem auto .5rem auto;
     }
@@ -229,7 +204,8 @@
     .jp-controls a {
       color: #fff;
     }
-    .jp-play,.jp-pause {
+    .jp-play,
+    .jp-pause {
       width: 60px;
       height: 40px;
       display: inline-block;
@@ -238,7 +214,8 @@
       border-right: 1px solid lighten($highlight, 10%);
     }
 
-    .jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
+    .jp-controls .jp-play:hover,
+    .jp-controls .jp-pause:hover {
       background-color: darken($highlight, 10%);
     }
 
@@ -265,7 +242,7 @@
     }
     .jp-progress {
       background-color: darken($highlight, 25%);
-      border-radius: 20px 20px 20px 20px;
+      border-radius: 20px;
       overflow: hidden;
       position: absolute;
       right: 22%;
@@ -276,7 +253,7 @@
     .jp-play-bar {
       height: 12px;
       background-color: #fff;
-      border-radius: 20px 20px 20px 20px;
+      border-radius: 20px;
     }
 
     .jp-volume-bar {
@@ -285,7 +262,7 @@
       top: 17px;
       width: 45px;
       height: 8px;
-      border-radius: 20px 20px 20px 20px;
+      border-radius: 20px;
       background-color: darken($highlight, 25%);
       overflow: hidden;
     }
@@ -293,13 +270,13 @@
     .jp-volume-bar-value {
       background-color: #fff;
       height: 8px;
-      border-radius: 20px 20px 20px 20px;
+      border-radius: 20px;
     }
 }
 
-#dashboard-sub-nav{
+#dashboard-sub-nav {
   padding: 1rem 0;
-  ul{
+  ul {
     list-style: none;
     padding-left: 0;
     padding: 1rem 0;
@@ -321,6 +298,5 @@
       color: $highlight;
     }
   }
-}
 }
 }
