@@ -1,0 +1,1532 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 34, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 68, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 90, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 222, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 253, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 267, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 323, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 380, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 391, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 400, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 409, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 420, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 425, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/normalize.scss */
+td,
+th {
+  padding: 0;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_normailze;
+ *= require_welcome;
+ *= require_podcasts;
+ */
+/* line 25, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 29, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.center {
+  text-align: center;
+}
+
+/* line 33, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper-wide {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* line 38, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* line 43, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper-skinny {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* line 48, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.cf::before,
+.cf::after {
+  content: '';
+  display: table;
+}
+
+/* line 54, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.cf::after {
+  clear: both;
+}
+
+/* line 58, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button {
+  border: 0;
+  border-radius: 2rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 1.5rem 2.5rem 0;
+  outline: none;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+/* line 69, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_highlight {
+  background: #EE7964;
+  transition: background .4s ease-in-out;
+}
+/* line 72, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_highlight:hover {
+  background: #ea5b42;
+}
+
+/* line 77, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_white {
+  background-color: #FFFFFF;
+  color: #2C3135;
+  transition: background .4s ease-in-out;
+}
+/* line 81, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_white:hover {
+  background: #ececec;
+}
+
+/* line 86, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header {
+  color: #2C3135;
+  background: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 90, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header #logo {
+  color: #2C3135;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 97, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header nav {
+  float: right;
+}
+/* line 100, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 103, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 106, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul li a {
+  color: #2C3135;
+  text-decoration: none;
+}
+
+/* line 114, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+/* line 119, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.banner h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 4rem 0;
+}
+
+/* line 130, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination {
+  text-align: center;
+  margin: 1rem 0 5rem 0;
+}
+/* line 133, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination a,
+.pagination .previous-page,
+.pagination .current,
+.pagination .next-page {
+  background-color: #2C3135;
+  border-radius: .15rem;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 .25rem;
+  padding: .75rem;
+  text-decoration: none;
+}
+/* line 145, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination a:hover,
+.pagination .previous-page:hover,
+.pagination .current:hover,
+.pagination .next-page:hover {
+  background-color: #EE7964;
+  color: #FFFFFF;
+}
+/* line 150, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .current {
+  background-color: #EE7964;
+  color: #FFFFFF;
+}
+/* line 154, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .disabled {
+  color: #c0c0c0;
+}
+/* line 156, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .disabled:hover {
+  color: #c0c0c0;
+}
+
+/* line 162, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#podcasts_banner {
+  background-image: url("podcasts_banner");
+}
+
+/* line 166, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#sign-in-banner {
+  background-image: url("sign_in_banner");
+}
+
+/* line 170, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#sign-up-banner {
+  background-image: url("sign_up_banner");
+}
+
+/* line 174, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#form {
+  padding: rem 3.5%;
+  background: #FFFFFF;
+  border-radius: .35rem;
+}
+/* line 178, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#form .title {
+  color: #2C3135;
+  text-align: center;
+}
+
+/* line 184, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+/* line 188, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  background: #EDEFF5;
+  border: 1px solid #dde0ec;
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+/* line 198, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+input[type=”file”] {
+  margin-top: .5rem;
+}
+
+/* line 202, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+textarea {
+  height: 8rem;
+}
+
+/* line 7, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts {
+  padding-bottom: 3rem;
+}
+/* line 9, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* line 13, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li {
+  border-radius: .35rem;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  float: left;
+  margin: 0 1% 2rem;
+  width: 23%;
+}
+/* line 20, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: .35rem .35rem 0 0;
+}
+/* line 25, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li .podcast-overview {
+  padding: 1rem 7.5%;
+}
+/* line 27, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li .podcast-overview h2 {
+  color: #2C3135;
+  font-size: 700;
+  margin: 0;
+}
+/* line 32, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li .podcast-overview .episode_count {
+  color: #a9b1b7;
+  font-size: .9rem;
+  margin: .5rem 0 .25rem 0;
+}
+/* line 39, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li:hover img {
+  opacity: 0.8;
+}
+/* line 43, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcasts ul li:hover .podcast_overview h2 {
+  color: #EE7964;
+}
+
+/* line 53, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #show-banner {
+  background: #2C3135;
+  padding: 5rem 0;
+  text-align: center;
+}
+/* line 57, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #show-banner h1 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0 0 .5rem;
+}
+/* line 63, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #show-banner .description {
+  color: #717e89;
+  line-height: 1.75;
+  margin: 0 auto 2rem;
+  width: 60%;
+}
+/* line 70, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #show-banner .subscribe-link {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background: #EE7964;
+  text-decoration: none;
+  display: inline;
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  margin: 0 .5rem;
+}
+/* line 82, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #show-banner .subscribe-link:hover {
+  background: #e95136;
+}
+/* line 87, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #breadcrumb {
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+  font-size: .7rem;
+  text-decoration: none;
+}
+/* line 94, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #breadcrumb a {
+  color: #434b51;
+}
+/* line 97, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #breadcrumb span {
+  margin: 0 0.5rem;
+}
+/* line 101, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode {
+  padding: 3rem 0;
+}
+/* line 103, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 106, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+/* line 110, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li:last-child {
+  border-bottom: 0;
+}
+/* line 113, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .episode-thumbnail {
+  width: 22%;
+  float: left;
+}
+/* line 116, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .episode-thumbnail img {
+  width: 1 0rem;
+  max-width: 100%;
+  border-radius: .35rem;
+}
+/* line 122, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .episode-overview {
+  width: 75.5%;
+  float: left;
+  margin-left: 1.5%;
+}
+/* line 127, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .episode-overview h2 a {
+  text-decoration: none;
+  color: #2C3135;
+}
+/* line 132, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .episode-overview .authorized-links {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+/* line 135, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .episode-overview .authorized-links a {
+  text-decoration: none;
+  color: #EE7964;
+  margin-right: 1rem;
+}
+/* line 142, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode ul li .description {
+  color: #66717b;
+}
+/* line 149, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content {
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #eef0f1;
+}
+/* line 153, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .current-episode-thumbnail {
+  display: block;
+  margin: 0 auto 2rem;
+  width: 10rem;
+  max-width: 100%;
+  border-radius: .35rem;
+}
+/* line 160, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* line 164, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .description {
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.7rem;
+  color: #434b51;
+}
+/* line 170, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-jplayer,
+#podcast-show #episode-content .jp-audio {
+  width: 70%;
+  margin: 3rem auto .5rem auto;
+}
+/* line 175, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-title {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
+/* line 180, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-title ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 185, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-gui {
+  position: relative;
+  background: #EE7964;
+  transition: background .4s ease-in-out;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+/* line 193, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-controls {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "FontAwesome";
+}
+/* line 200, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-controls li {
+  display: inline;
+}
+/* line 203, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-controls a {
+  color: #fff;
+}
+/* line 206, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-play,
+#podcast-show #episode-content .jp-pause {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-right: 1px solid #f3a192;
+}
+/* line 216, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-controls .jp-play:hover,
+#podcast-show #episode-content .jp-controls .jp-pause:hover {
+  background-color: #e95136;
+}
+/* line 221, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-mute, #podcast-show #episode-content .jp-unmute {
+  position: absolute;
+  right: 59px;
+  top: -3px;
+  width: 20px;
+  height: 40px;
+  display: inline-block;
+  line-height: 46px;
+}
+/* line 231, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-mute {
+  text-align: left;
+}
+/* line 234, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-time-holder {
+  color: #FFF;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  right: 90px;
+  top: 14px;
+}
+/* line 242, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-progress {
+  background-color: #be2f15;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 22%;
+  top: 15px;
+  width: 65%;
+}
+/* line 252, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-play-bar {
+  height: 12px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+/* line 258, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-volume-bar {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  width: 45px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: #be2f15;
+  overflow: hidden;
+}
+/* line 269, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #episode-content .jp-volume-bar-value {
+  background-color: #fff;
+  height: 8px;
+  border-radius: 20px;
+}
+/* line 276, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #dashboard-sub-nav {
+  padding: 1rem 0;
+}
+/* line 278, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #dashboard-sub-nav ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eef0f1;
+  text-align: center;
+}
+/* line 285, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #dashboard-sub-nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+/* line 288, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #dashboard-sub-nav ul li a {
+  color: #2C3135;
+  text-decoration: none;
+}
+/* line 291, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #dashboard-sub-nav ul li a:hover {
+  color: #EE7964;
+}
+/* line 296, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/podcasts.scss */
+#podcast-show #dashboard-sub-nav ul .current {
+  color: #EE7964;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_normailze;
+ *= require_welcome;
+ *= require_podcasts;
+ */
+/* line 25, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 29, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.center {
+  text-align: center;
+}
+
+/* line 33, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper-wide {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* line 38, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* line 43, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper-skinny {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* line 48, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.cf::before,
+.cf::after {
+  content: '';
+  display: table;
+}
+
+/* line 54, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.cf::after {
+  clear: both;
+}
+
+/* line 58, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button {
+  border: 0;
+  border-radius: 2rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 1.5rem 2.5rem 0;
+  outline: none;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+/* line 69, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_highlight {
+  background: #EE7964;
+  transition: background .4s ease-in-out;
+}
+/* line 72, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_highlight:hover {
+  background: #ea5b42;
+}
+
+/* line 77, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_white {
+  background-color: #FFFFFF;
+  color: #2C3135;
+  transition: background .4s ease-in-out;
+}
+/* line 81, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_white:hover {
+  background: #ececec;
+}
+
+/* line 86, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header {
+  color: #2C3135;
+  background: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 90, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header #logo {
+  color: #2C3135;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 97, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header nav {
+  float: right;
+}
+/* line 100, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 103, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 106, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul li a {
+  color: #2C3135;
+  text-decoration: none;
+}
+
+/* line 114, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+/* line 119, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.banner h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 4rem 0;
+}
+
+/* line 130, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination {
+  text-align: center;
+  margin: 1rem 0 5rem 0;
+}
+/* line 133, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination a,
+.pagination .previous-page,
+.pagination .current,
+.pagination .next-page {
+  background-color: #2C3135;
+  border-radius: .15rem;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 .25rem;
+  padding: .75rem;
+  text-decoration: none;
+}
+/* line 145, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination a:hover,
+.pagination .previous-page:hover,
+.pagination .current:hover,
+.pagination .next-page:hover {
+  background-color: #EE7964;
+  color: #FFFFFF;
+}
+/* line 150, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .current {
+  background-color: #EE7964;
+  color: #FFFFFF;
+}
+/* line 154, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .disabled {
+  color: #c0c0c0;
+}
+/* line 156, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .disabled:hover {
+  color: #c0c0c0;
+}
+
+/* line 162, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#podcasts_banner {
+  background-image: url("podcasts_banner");
+}
+
+/* line 166, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#sign-in-banner {
+  background-image: url("sign_in_banner");
+}
+
+/* line 170, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#sign-up-banner {
+  background-image: url("sign_up_banner");
+}
+
+/* line 174, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#form {
+  padding: rem 3.5%;
+  background: #FFFFFF;
+  border-radius: .35rem;
+}
+/* line 178, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#form .title {
+  color: #2C3135;
+  text-align: center;
+}
+
+/* line 184, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+/* line 188, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  background: #EDEFF5;
+  border: 1px solid #dde0ec;
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+/* line 198, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+input[type=”file”] {
+  margin-top: .5rem;
+}
+
+/* line 202, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+textarea {
+  height: 8rem;
+}
+
+/* line 7, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background {
+  background: url(/assets/welcome_background-68f634903f09455ea1ae57b8302c82ee14bfe739fe861c97f73d5ac52fab7df2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+/* line 12, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 15, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 22, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background header nav {
+  float: right;
+}
+/* line 25, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background header ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 28, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background header ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 31, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background header ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 38, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 7rem 0 2rem 0;
+  text-align: center;
+}
+/* line 45, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/welcome.scss */
+#background .button {
+  text-align: center;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ *= require_normailze;
+ *= require_welcome;
+ *= require_podcasts;
+ */
+/* line 26, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 30, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.center {
+  text-align: center;
+}
+
+/* line 34, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper-wide {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* line 39, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* line 44, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.wrapper-skinny {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* line 49, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.cf::before,
+.cf::after {
+  content: '';
+  display: table;
+}
+
+/* line 55, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.cf::after {
+  clear: both;
+}
+
+/* line 59, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button {
+  border: 0;
+  border-radius: 2rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 1.5rem 2.5rem 0;
+  outline: none;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+/* line 70, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_highlight {
+  background: #EE7964;
+  transition: background .4s ease-in-out;
+}
+/* line 73, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_highlight:hover {
+  background: #ea5b42;
+}
+
+/* line 78, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_white {
+  background-color: #FFFFFF;
+  color: #2C3135;
+  transition: background .4s ease-in-out;
+}
+/* line 82, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.button_white:hover {
+  background: #ececec;
+}
+
+/* line 87, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header {
+  color: #2C3135;
+  background: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 91, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header #logo {
+  color: #2C3135;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 98, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header nav {
+  float: right;
+}
+/* line 101, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 104, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 107, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#main-header ul li a {
+  color: #2C3135;
+  text-decoration: none;
+}
+
+/* line 115, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+/* line 120, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.banner h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 4rem 0;
+}
+
+/* line 131, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination {
+  text-align: center;
+  margin: 1rem 0 5rem 0;
+}
+/* line 134, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination a,
+.pagination .previous-page,
+.pagination .current,
+.pagination .next-page {
+  background-color: #2C3135;
+  border-radius: .15rem;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 .25rem;
+  padding: .75rem;
+  text-decoration: none;
+}
+/* line 146, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination a:hover,
+.pagination .previous-page:hover,
+.pagination .current:hover,
+.pagination .next-page:hover {
+  background-color: #EE7964;
+  color: #FFFFFF;
+}
+/* line 151, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .current {
+  background-color: #EE7964;
+  color: #FFFFFF;
+}
+/* line 155, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .disabled {
+  color: #c0c0c0;
+}
+/* line 157, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.pagination .disabled:hover {
+  color: #c0c0c0;
+}
+
+/* line 163, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#podcasts_banner {
+  background-image: url("podcasts_banner");
+}
+
+/* line 167, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#sign-in-banner {
+  background-image: url("sign_in_banner");
+}
+
+/* line 171, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#sign-up-banner {
+  background-image: url("sign_up_banner");
+}
+
+/* line 175, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#form {
+  padding: rem 3.5%;
+  background: #FFFFFF;
+  border-radius: .35rem;
+}
+/* line 179, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+#form .title {
+  color: #2C3135;
+  text-align: center;
+}
+
+/* line 185, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+/* line 189, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  background: #EDEFF5;
+  border: 1px solid #dde0ec;
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+/* line 199, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+input[type=”file”] {
+  margin-top: .5rem;
+}
+
+/* line 203, /Users/Koan/side-projects/podnet-fm/app/assets/stylesheets/application.scss */
+textarea {
+  height: 8rem;
+}
