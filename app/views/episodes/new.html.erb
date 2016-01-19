@@ -1,15 +1,14 @@
 <div id="podcast-show">
   <div id="show-banner">
     <div class="wrapper-skinny">
-      <h1>Dashboard:<br><%= @podcast.title %></h1>
-      <p class="description"><%= @podcast.description %></p>
+      <h1><%= @podcast.title %></h1>
     </div>
   </div>
 
 <div id="dashboard-sub-nav">
   <div class="wrapper-skinny">
     <ul>
-      <li> <%= link_to "Episodes", root_path %></li>
+      <li><%= link_to "Episodes", root_path %></li>
       <li><%= link_to "New Episodes", new_podcast_episode_path(@podcast), class: "current" %></li>
       <li><%= link_to "Account Settings", edit_podcast_registration_path(@podcast) %></li>
       <li><%= link_to "View Podcast", podcast_episodes_path(@podcast) %></li>
@@ -18,7 +17,7 @@
 </div>
 
 <div class="wrapper-skinny">
-  <h1>Upload an Episode</h1>
+  <h2>Upload an Episode</h2>
 
   <%= render "form" %>
 </div>

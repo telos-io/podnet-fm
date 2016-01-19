@@ -170,3 +170,35 @@ body {
 #sign-up-banner {
   background-image: url('sign_up_banner');
 }
+
+#form {
+  padding: rem 3.5%;
+  background: $white;
+  border-radius: .35rem;
+  .title {
+    color: $dark;
+    text-align: center;
+  }
+}
+
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  background: $light;
+  border: 1px solid darken($light, 5%);
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+input[type=”file”] {
+  margin-top: .5rem;
+}
+
+textarea {
+  height: 8rem;
+}
