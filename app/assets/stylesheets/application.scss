@@ -160,19 +160,19 @@ body {
 }
 
 #podcasts_banner {
-  background-image: url('podcasts_banner');
+  background-image: url('https://s3.amazonaws.com/podnet-fm/podcasts_banner.jpg');
 }
 
 #sign-in-banner {
-  background-image: url('sign_in_banner');
+  background-image: url('https://s3.amazonaws.com/podnet-fm/sign_up_banner.jpg');
 }
 
 #sign-up-banner {
-  background-image: url('sign_up_banner');
+  background-image: url('https://s3.amazonaws.com/podnet-fm/sign_in_banner.jpg');
 }
 
 #form {
-  padding: rem 3.5%;
+  padding: 3.5%;
   background: $white;
   border-radius: .35rem;
   .title {
