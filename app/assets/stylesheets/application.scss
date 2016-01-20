@@ -202,3 +202,18 @@ input[type=”file”] {
 textarea {
   height: 8rem;
 }
+
+footer {
+  background-color: $dark;
+  color: $white;
+  height: 5rem;
+  text-align: center;
+  a {
+    color: $white;
+  }
+  .valign {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
