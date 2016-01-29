@@ -36,3 +36,7 @@
 - Episode Page (episode#show)
 - Episode edit (episode#edit)
 - Dashboard (podcast#dashboard)
+
+## Current Bugs
+- Devise not allowing updates
+- Default image not working
